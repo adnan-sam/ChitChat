@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+}
+ 
+nav {
+    margin: 0;
+ 	background-color: #2654EE;
+ 	color: #2C3963;
+    padding: 1vh;
+    font-size: 1.2rem;
+ } 
+ .head {
+    background-color: #2654EE;
+    margin-left: 30px;
+ }
+ .input {
+    background-color: #F4F4F6;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1vh;
+    text-align: center;
+ }
+form {
+    width: fit-content;
+    height: fit-content;
+    width: 90%;
+}
+form input {
+    border: 0;
+    padding: 12px;
+    width: 90%;
+    margin-right: 0.5%;
+    background-color: #fff;
+    border-radius: 5px;
+} 
+form button { 
+    background: #2654EE;
+    border: none; 
+    padding: 5px;
+    font-size: 20px;
+    color: #2C3963; 
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: end;
+}
+.btn {
+    position: fixed;
+    right: 52px;
+    width: 100px;
+    text-align: center;
+    margin: 2px -12px;
+}
+.border-input {
+    border-radius: 5px;
+    padding: 0;
+}
+
+ 
+ #messages { 
+
+ 	margin: 0; 
+ 	padding: 0; 
+ 	
+ }
+ 
+ #messages li { 
+ 	padding: 5px 10px; 
+ }
+ 
+ #messages li:nth-child(odd) { 
+ 	background: #b3ffb3; 
+ }
+
+
+#list{
+	text-align: right;
+}
+.container {
+	margin: auto;
+	padding: auto;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ChitChat</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel = "stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/chat.png" type="image/x-icon">
+    <script>
+        var name=sessionStorage.getItem("NAME");
+    </script>
+</head>
+<body>
+  <div class="container">
+    <nav id="intro">
+      <h1 class="head">ChitChat<h5 class="subhead"> by Adnan</h5></h1>
+    </nav>
+    
+    <ul id="messages"></ul>
+    <div class="input">
+      <form class="border-input" action="">
+        <input id="m" placeholder="Type Your Message..." autocomplete="off" required /><button class="btn">Send</button>
+      </form>
+    </div>
+
+    <div class="message-box">
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script>
+      
+          var socket = io();
+          socket.emit('joining msg', name);
+          $('form').submit(function(e) {
+            e.preventDefault();            // will prevent page reloading
+              socket.emit('chat message', (name + ':  ' + $('#m').val()));
+                          $('#messages').append($('<li id="list">').text('You:  ' + $('#m').val()));
+              $('#m').val('');
+              return false;
+          });
+          socket.on('chat message', function(msg){
+              $('#messages').append($('<li id="ui">').text(msg));
+          });
+      </script>
+    </div>
+  </div>
+</body>
+</html>

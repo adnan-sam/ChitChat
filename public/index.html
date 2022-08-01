@@ -1,0 +1,46 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="shortcut icon" href="images/chat.png" type="image/x-icon">
+    <link rel="stylesheet" href="loginpage.css">
+    <!-- Bootstrap modules -->
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Login</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+    <script>
+      function handleSubmit() {
+        var name=document.getElementById('guestname').value;
+        sessionStorage.setItem("NAME",name);
+        return;
+      }
+    </script>
+  </head>
+
+  <body class="text-center">
+    <div class="login_container">
+        <form class="form-signin" action="/form-submit" method="post">
+            <img class="mb-4" src="images/group-meeting.png" alt="" width="120">
+            <h1 class="h3 mb-3 font-weight-normal">Please Enter your Name</h1>
+            <input type="text" id="guestname" class="form-control" placeholder="Your Name Here" required autofocus autocomplete="off">
+            <div class="checkbox mb-3">
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="handleSubmit()">Enter</button>
+            <p class="mt-5 mb-3 text-muted">&copy; Adnan Sameer</p>
+        </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+}
+ 
+nav {
+    margin: 0;
+ 	background-color: #2654EE;
+ 	color: #2C3963;
+    padding: 1vh;
+    font-size: 1.2rem;
+ } 
+ .head {
+    background-color: #2654EE;
+    margin-left: 30px;
+ }
+ .subhead {
+    background-color: #2654EE;
+    margin-left: 175px;
+    top: 20px;
+    position: absolute;
+ }
+ .input {
+    background-color: #F4F4F6;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1vh;
+    text-align: center;
+ }
+form {
+    width: fit-content;
+    height: fit-content;
+    width: 90%;
+}
+form input {
+    border: 0;
+    padding: 12px;
+    width: 90%;
+    margin-right: 0.5%;
+    background-color: #fff;
+    border-radius: 5px;
+} 
+form button { 
+    background: #2654EE;
+    border: none; 
+    padding: 5px;
+
+    color: #2C3963; 
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.btn {
+    position: fixed;
+    right: 52px;
+    width: 7vw;
+    text-align: center;
+    margin: 2px -12px;
+}
+.border-input {
+    border-radius: 5px;
+    padding: 0;
+}
+
+ 
+ #messages { 
+ 	margin: 10px; 
+ 	padding: 0; 
+	border-radius: 10px;
+	margin-bottom: 70px;
+ }
+ 
+ #messages li { 
+ 	padding: 5px 10px; 
+ }
+ 
+ /* #messages li:nth-child(odd) { 
+ 	background: #DFDFDE; 
+ } */
+.message-box {
+	text-align: center;
+}
+.join {
+    background: red;
+}
+#list{
+    margin: 5px 0px;
+    background: #DFDFDE; 
+	text-align: right;
+}
+.container {
+	margin: auto;
+	padding: auto;
+}
+#ui {
+    color: #2654EE;
+}
+@media screen and (max-width: 850px) {
+    form button { 
+        background: #2654EE;
+        border: none; 
+        padding: 5px;
+        font-size: 1rem;
+        color: #2C3963; 
+        border-radius: 5px;
+    }
+    form input {
+        margin-right:0
+    } 
+    .btn {
+        width: 55px;
+    }
+  }
